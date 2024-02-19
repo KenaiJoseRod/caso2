@@ -4,8 +4,8 @@ sidebar_position: 1
 
 # Manual para Script de Instalación
 # Docker | GitLab | Opción SSL | Opción SSH
-# Facturador PRO4
-
+### Facturador PRO4
+[INFO] - Esta es una notificación de información.
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
