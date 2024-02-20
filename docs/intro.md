@@ -5,6 +5,7 @@ sidebar_position: 1
 # Manual para Script de Instalación
 # Docker | GitLab | Opción SSL | Opción SSH
  Facturador PRO4
+ ------
 ## Descripción
  Hemos elaborado un script para uso en instancias Linux con Ubuntu 18 o superior, este es un archivo que actualiza el sistema, instala las herramientas, sus dependencias y realiza todas las configuraciones previas, dejando el aplicativo listo para probar en menos de 20 minutos (siempre y cuando el dominio ya esté configurado hacia la instancia), su ejecución es muy sencilla.
 
@@ -42,9 +43,9 @@ sidebar_position: 1
      ./install.sh [dominio]
   ```
       **Por ejemplo:** 
-    ```bash
-     ./install.sh facturador.pro
-     ```
+    
+     > ./install.sh facturador.pro
+     
 7. Una vez ejecutado el comando iniciará el proceso de actualización del sistema, en el proceso se le solicitará:
       1. El usuario y contraseña de GitLab, para que se pueda descargar el proyecto en su instancia
       2. Si desea instalar  SSL gratuito, tenga en cuenta que este debe ser actualizado cada 90 días, el mensaje será el siguiente:   
@@ -72,4 +73,4 @@ sidebar_position: 1
 ## Enlaces de interés
   - **[Actualización mediante ejecución Script para instalaciones Docker](https://gitlab.com/b.mendoza/facturadorpro3/-/wikis/Script-Update-Docker)**
   - **[Gestión de SSL independiente, no el que incorpora el Script](https://docs.google.com/document/d/1D87YJ9fq9yHiAauu6SGVugiC3m_i42DrFUt6VKYXuDI/edit?usp=sharing)**
-  - **[Guía gitlab para la instalación, contiene el script usado en el presente manual](https://gitlab.com/b.mendoza/facturadorpro3/snippets/1971490)**, además posee los parámetros extras que pueden usarse en la ejecución del paso 6
+  - **[Guía gitlab para la instalación, contiene el script usado en el presente manual](https://gitlab.com/b.mendoza/facturadorpro3/snippets/1971490)**, además posee los parámetros extras que pueden usarse en la ejecución del paso 6.
