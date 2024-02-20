@@ -20,6 +20,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
+              
             Iniciar
           </Link>
         </div>
@@ -33,7 +34,7 @@ export default function Home() {
   return (
     <Layout
       title={` ${siteConfig.title}`}
-      description="Avances del caso2 <head />">
+      description="caso2 <head -DOCUMENTACION/>">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

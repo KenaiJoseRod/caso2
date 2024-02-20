@@ -18,7 +18,7 @@ Hemos elaborado un script para uso en instancias Linux, este es un archivo .sh q
 
 3. Es importante configurar su dominio apuntando a la IP de su instancia para que durante la ejecución del script se valide el certificado SSL y al finalizar la ejecución no tenga errores y todo esté listo para realizar pruebas. Edite los récords A y CNAME donde A debe contener su IP y CNAME el valor * (asterisco) para que se tomen los subdominios registrados por la herramienta.
 
-    ![imgagen](img/img1.png)
+    <center>  ![imgagen](img/img1.png)</center> 
 
 4. Durante la ejecución del script deberá almacenar en su dominio dos registros TXT con unos valores que se mostrarán en pantalla, estos registros son validados en directo y no pueden tardar más de 2 minutos en validarse en su dominio.
 
@@ -49,7 +49,7 @@ https://gitlab.com/snippets/1852652
 ```
     Observará a una página como la siguiente, donde debe copiar el contenido del script y pegarlo en su archivo install.sh, es importante que mantenga las estructura del mismo.
 
-![imgagen](img/img5.png)
+<center>![imgagen](img/img5.png)</center>
 
 7. Para salir de editor y guardar puede presionar “**ctrl +x**” seguidamente se le consultará si desea guardar los cambios, confirme con “**y**” y luego “**enter**”. 
 
@@ -62,7 +62,7 @@ chmod +x install.sh
 ```bash
 ./install.sh [repositorio] [dominio]
 ```
-        por ejemplo:
+**Por ejemplo:**                                                             
 ./install.sh https://gitlab.com/rash07/facturadorpro2 elfacturador.com
 
 10. Una vez ejecutado el comando se iniciará un proceso donde debe ir aceptando las preguntas y que le mostrará en pantalla los valores que debe añadir en los 2 récords tipo TXT de su dominio con nombre.
@@ -71,11 +71,11 @@ chmod +x install.sh
 
     en la siguiente imagen le muestran el valor como v703JW.... debera copiarlo y añadirlo al primer record TXT, seguidamente pulsar enter, se le mostrará en pantalla un segundo valor para el segundo TXT.
 
-    ![imgagen](img/img6.png)
+    <center>  ![imgagen](img/img6.png)</center> 
 
 11. Editados los récords en su dominio, deberá aceptar para continuar y que el proceso verifique que sea exitoso, de ser exitoso obtendrá una pantalla similar a la siguiente.
 
-    ![imgagen](img/img7.png)
+    <center>  ![imgagen](img/img7.png)</center> 
 
 12. Continuará el proceso de actualización del sistema, se le solicitará el usuario y contraseña de GitLab, para que se pueda clonar/descargar el proyecto en su instancia, luego culminará y tendrá los accesos listos en su dominio:
 

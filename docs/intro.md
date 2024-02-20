@@ -4,25 +4,26 @@ sidebar_position: 1
 
 # Manual para Script de Instalación
 # Docker | GitLab | Opción SSL | Opción SSH
- Facturador PRO4
- ------
+Facturador PRO4
+
+ --------
 ## Descripción
  Hemos elaborado un script para uso en instancias Linux con Ubuntu 18 o superior, este es un archivo que actualiza el sistema, instala las herramientas, sus dependencias y realiza todas las configuraciones previas, dejando el aplicativo listo para probar en menos de 20 minutos (siempre y cuando el dominio ya esté configurado hacia la instancia), su ejecución es muy sencilla.
 
 ## Requisitos previos
 1. Tener acceso a su servidor, vps, máquina virtual o local via SSH, en las instalaciones que realizamos para AWS o Google Cloud, hacemos entrega del usuario, la IP del servidor y la clave ssh que puede ser un archivo .ppk o .pem, recuerde almacenarlas en su equipo local.
 2. Tener instalado una versión de ssh en su máquina para conectarse de manera remota, puede utilizar putty, filezilla o una consola terminal. para mayor información sobre el acceso SSH visite los siguientes manuales:
-   - **[guía para acceder con Putty (gestión de servidor)](https://docs.google.com/document/d/1PmQejvNd_dkXVm8DPUYlQTag0wvES46tMpxX3MPhkNY/edit#)**
-   - **[guía para acceder con Winscp (gestión de archivos con aplicación de escritorio)](https://docs.google.com/document/d/1Xpri2102N4b5C-dG-FVPXW5ZWjEz5S4iDjpvl7Zwq2E/edit#)**
+   - **[Guía para acceder con Putty (gestión de servidor)](https://docs.google.com/document/d/1PmQejvNd_dkXVm8DPUYlQTag0wvES46tMpxX3MPhkNY/edit#)**
+   - **[Guía para acceder con Winscp (gestión de archivos con aplicación de escritorio)](https://docs.google.com/document/d/1Xpri2102N4b5C-dG-FVPXW5ZWjEz5S4iDjpvl7Zwq2E/edit#)**
 3. Si es posible configurar su dominio apuntando a su instancia para que al finalizar la instalación se encuentre disponible el aplicativo. Edite los récords A y CNAME donde A debe contener su IP y CNAME el valor * (asterisco) para que se tomen los subdominios registrados por la herramienta.
 
-   ![imgagen](img/img1.png)
+   <center>  ![imgagen](img/img1.png)</center> 
 
 4. En caso de contar con servicios instalados en su instancia como mysql, apache o nginx, debe detenerlos, ya que estos ocupan los puertos que pasarán a usar el aplicativo con los contenedores de Docker.
 
 ## Pasos
 1. Acceder a su instancia vía SSH.
-2. Loguearse como super usuario ejecute
+2. Loguearse como super usuario, ejecute
   ```bash
      sudo su 
   ```
@@ -42,33 +43,30 @@ sidebar_position: 1
   ```bash
      ./install.sh [dominio]
   ```
-      **Por ejemplo:** 
-    
-     > ./install.sh facturador.pro
+**Por ejemplo:** 
+> ./install.sh facturador.pro
      
-7. Una vez ejecutado el comando iniciará el proceso de actualización del sistema, en el proceso se le solicitará:
+2. Una vez ejecutado el comando iniciará el proceso de actualización del sistema, en el proceso se le solicitará:                             
       1. El usuario y contraseña de GitLab, para que se pueda descargar el proyecto en su instancia
       2. Si desea instalar  SSL gratuito, tenga en cuenta que este debe ser actualizado cada 90 días, el mensaje será el siguiente:   
       **Instalar con SSL? (debe tener acceso al panel de su dominio para editar/agregar records TXT). si[s] no[n]**
           1. Deberá contestar con “s” o “n” para continuar.
           2. Si selecciona SÍ, deberá contestar las siguientes preguntas con “y”, son 2 en total, seguidamente se le ofrecerá un código que debe añadir en un récord tipo TXT en su dominio quedando como **_acme-challenge.example.com** o simplemente **_acme-challenge dependerá de su proveedor**.
-
-                  ![imgagen](img/IMG2.png)
-          3. para continuar presione enter, luego deberá repetir las acciones para añadir un segundo código y habrá finalizado la configuración, si el proceso es exitoso la ejecución del script continuará.
-      3. Si desea obtener y gestionar actualizaciones automáticas, deberá disponer de su sesión de gitlab al momento
-
-              ![imgagen](img/img3.png)
+            <center>  ![imgagen](img/IMG2.png)</center> 
+         3. Para continuar presione enter, luego deberá repetir las acciones para añadir un segundo código y habrá finalizado la configuración, si el proceso es exitoso la ejecución del script continuará.
+3. Si desea obtener y gestionar actualizaciones automáticas, deberá disponer de su sesión de gitlab al momento
+            <center> ![imgagen](img/img3.png)</center> 
           1. Deberá contestar con “s” o “n” para continuar
           2. Debe seleccionar SÍ, al final del despliegue se le dará un extracto de texto que debe añadir a su configuración de gitlab
 
-              ![imgagen](img/img4.png)
+            <center>  ![imgagen](img/img4.png)</center> 
               
-8. Finalizado el script y dependiendo de sus selecciones anteriores, se le entregará varios datos que debe guardar, como;
-      1. usuario administrador
-      2. contraseña para usuario administrador
-      3. url del proyecto
-      4. ubicación del proyecto dentro del servidor
-      5. clave ssh para añadir a gitlab (obligatorio para quienes seleccionan la instalación de SSH)
+4. Finalizado el script y dependiendo de sus selecciones anteriores, se le entregará varios datos que debe guardar, como;
+      1. Usuario administrador.
+      1. Contraseña para usuario administrador.
+      2. Url del proyecto.
+      3. Ubicación del proyecto dentro del servidor.
+      4. Clave ssh para añadir a gitlab (obligatorio para quienes seleccionan la instalación de SSH).
 
 ## Enlaces de interés
   - **[Actualización mediante ejecución Script para instalaciones Docker](https://gitlab.com/b.mendoza/facturadorpro3/-/wikis/Script-Update-Docker)**
