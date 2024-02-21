@@ -12,13 +12,10 @@
 
 @media screen and (max-width: 989px) {
   .heroBanner {
-    padding: 11rem;
+    padding: 7rem 0rem;
     
   }
-  .heroBanner h1{
-    font-size: 45px;
-    
-  }
+ 
   
 }
 

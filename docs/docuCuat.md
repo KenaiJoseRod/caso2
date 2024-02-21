@@ -26,10 +26,10 @@ Dentro del editor ubicar los parámetros y cambiarlos.
 ```
     - Con eso habrá completado el lado de la herramienta, en ese momento hasta no tener un SSL configurado no podrá acceder a la herramienta.
 
-<div style={{ backgroundColor: '#DDACA1', padding: '10px', border: '5px  solid red', borderRadius: '15px' }}>
-    <strong>_¡Importante!_</strong>
-    <p>Recuerde habilitar el puerto 443 para poder tener acceso a la herramienta.</p>
-</div>
+
+:::tip _Recuerda_
+Recuerde habilitar el puerto 443 para poder tener acceso a la herramienta.
+:::
 
 
 

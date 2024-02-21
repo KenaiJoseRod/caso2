@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'CASO 2 - MARKDOWN',
+  title: 'CASO 2 - DOCUMENTACION USANDO MARKDOWN',
   tagline: '',
   favicon: 'img/favicon.ico',
 
@@ -16,12 +16,15 @@ const config = {
   url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/caso2/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'KenaiJoseRod', // Usually your GitHub org/user name.
   projectName: 'caso2', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
+  
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 

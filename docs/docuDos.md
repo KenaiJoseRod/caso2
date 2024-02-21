@@ -90,8 +90,7 @@ https://gitlab.com/rash07/facturadorpro1
 PRO2:                                        
 https://gitlab.com/rash07/facturadorpro2
 
-
-### Recomendaciones
+:::tip Recomendaciones
 
 - Luego de instalar el facturador puede cambiar algunos parámetros en el archivo .env como:
 
@@ -102,3 +101,4 @@ https://gitlab.com/rash07/facturadorpro2
 - Recuerde que siempre que se edita el archivo .env debe utilizar el comando “php artisan config:cache” dentro del contenedor de fpm1, para más detalles puede observar el manual de actualización **[Aqui](https://docs.google.com/document/d/11PI1a9yjCPfH9CCuWmJSrdj1V8IEUffqurqvdkw29co/edit?usp=sharing)**
 
 - La ruta donde ejecute el script será donde se clone el repositorio, debe verificar que los usuarios del servidor tengan permisos a dicha ruta si desea acceder desde ftp o scp.
+:::
