@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcaso_2_markdown=self.webpackChunkcaso_2_markdown||[]).push([[667],{4403:o=>{o.exports=JSON.parse('{"permalink":"/caso2/blog/tags/hello","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

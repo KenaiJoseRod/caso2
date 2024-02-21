@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcaso_2_markdown=self.webpackChunkcaso_2_markdown||[]).push([[766],{8447:a=>{a.exports=JSON.parse('{"label":"hola","permalink":"/caso2/blog/tags/hola","allTagsPath":"/caso2/blog/tags","count":1,"unlisted":false}')}}]);
